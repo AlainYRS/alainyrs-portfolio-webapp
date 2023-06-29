@@ -68,7 +68,7 @@ export default function Home() {
               </span>
             </h2>
             <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-              What I've learned.
+              What I have learned.
             </p>
           </a>
           
@@ -85,7 +85,7 @@ export default function Home() {
               </span>
             </h2>
             <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-              Where I've worked.
+              Where I have worked.
             </p>
           </a>
 
