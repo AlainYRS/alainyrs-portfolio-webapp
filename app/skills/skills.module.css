@@ -1,0 +1,6 @@
+#SkillSet{
+    border: 1px solid red;
+}
+#SkillSet input[type="checkbox"]:checked + label{
+    border: 1px solid white;
+}

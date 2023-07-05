@@ -1,0 +1,47 @@
+.NavMenu{
+    display : flex;
+    position: relative;
+    flex-direction: column;
+    float: left;
+    width: 60px;
+    margin: 5px;
+    height: calc(100vh - 10px);
+    padding: 2px;
+    justify-content: space-between;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.DivMenu{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: calc(100% - 4px);
+    margin: 2px;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.MenuIcon{
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    transition: 350ms;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+.LabelMenu{
+    font-size: small;
+    width: max-content;
+    color: rgba(255, 255, 255, .4);
+    transition: 350ms;
+}
+.DivMenu:hover .MenuIcon{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.DivMenu:hover .LabelMenu{
+    color: rgba(255, 255, 255, 1);
+}

@@ -1,11 +1,15 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
+import './globals.css';
+import { Inter } from 'next/font/google';
+import { ReactNode } from 'react';
 import { Metadata } from 'next';
 
 const inter = Inter({ subsets: ['latin'] })
 
+type Props = {
+  children: ReactNode;
+};
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Alain Portfolio Webapp',
   description: 'Developed by Alain with React Next.js Typescript, TailwindCSS, Power BI, Cloud Firestore and more.',
   authors: [{
@@ -47,12 +51,14 @@ export const metadata = {
   },
 }
 
-export default function RootLayout({children}: {children: React.ReactNode}) {
+export default function RootLayout({children}: Props ) {
 
   return (
     <>
-      <html lang="en">
-        <body className={inter.className}>{children}</body>
+      <html>
+        <body className={(inter.className, "bg-gray-900 text-white")}>
+          {children}
+        </body>
       </html>
     </>
   )
