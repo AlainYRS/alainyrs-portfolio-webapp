@@ -1,48 +1,49 @@
 .NavMenu{
     display : flex;
-    position: relative;
+    position: absolute;
     flex-direction: column;
     float: left;
-    width: 60px;
-    margin: 5px;
+    width: 70px;
     height: auto;
     max-height: 90vh;
-    padding: 2px;
     justify-content: space-between;
-    border-radius: 7px;
-    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 0 0 7px 0;
+    background-color: rgba(35, 35, 35, 1);
+    border-right: 1px solid white;
 }
 .DivMenu{
     display: flex;
     position: relative;
     flex-direction: column;
-    width: calc(100% - 4px);
-    margin: 2px;
-    padding: 2px;
     justify-content: center;
     align-items: center;
-    border-radius: 7px;
-    cursor: pointer;
+    padding: 2px 0;
 }
 .MenuIcon{
     display: block;
     position: relative;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 7px;
     transition: 350ms;
     border: 1px solid rgba(255, 255, 255, 0);
+}
+.MenuIcon:not(:nth-child(1)){
+    margin: 7px 0 0 0;
 }
 .LabelMenu{
     font-size: small;
     width: max-content;
     color: rgba(255, 255, 255, .4);
     transition: 350ms;
+    margin: 0 0 7px 0;
 }
-.DivMenu:hover .MenuIcon{
+.MenuIcon:not(:nth-child(1)):hover{
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.3);
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
-.DivMenu:hover .LabelMenu{
+.MenuIcon:hover+.LabelMenu{
     color: rgba(255, 255, 255, 1);
+    font-weight: 400;
 }
