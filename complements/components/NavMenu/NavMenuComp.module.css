@@ -5,7 +5,8 @@
     float: left;
     width: 60px;
     margin: 5px;
-    height: calc(100vh - 10px);
+    height: auto;
+    max-height: 90vh;
     padding: 2px;
     justify-content: space-between;
     border-radius: 7px;
