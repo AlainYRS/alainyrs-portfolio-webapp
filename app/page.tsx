@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import NavMenuComp from '@/complements/components/NavMenu/NavMenuComp';
-import ProfImage from '../public/Images/AYRS.jpeg';
+import ProfImage from '../public/images/AYRS.jpeg';
 import GitImage from '../public/Icons/Git.webp'
 
 export default function Home() {
@@ -44,9 +44,8 @@ export default function Home() {
           </div>
 
           <div className="grid mb-32 text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-
             <a
-              href="#"
+              href="/portfolio"
               className="px-5 py-4 transition-colors border border-transparent rounded-lg group hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
               target="_blank"
               rel="noopener noreferrer"
@@ -78,7 +77,7 @@ export default function Home() {
             </Link>
             
             <Link
-              href="#"
+              href="/experience"
               className="px-5 py-4 transition-colors border border-transparent rounded-lg group hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
             >
               <h2 className={`mb-3 text-2xl font-semibold`}>
@@ -94,7 +93,7 @@ export default function Home() {
 
 
             <Link
-              href="#"
+              href="/about"
               className="px-5 py-4 transition-colors border border-transparent rounded-lg group hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
             >
               <h2 className={`mb-3 text-2xl font-semibold`}>

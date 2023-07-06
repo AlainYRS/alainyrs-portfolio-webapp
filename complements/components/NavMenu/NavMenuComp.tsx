@@ -37,7 +37,7 @@ export default function NavMenuComp(){
                     </Link>
                     <label className={(CompStyles.LabelMenu)} htmlFor="SkillsMenu">Skills</label>
 
-                    <Link href="/jobs" id="JobExpMenu" className={(CompStyles.MenuIcon)}>
+                    <Link href="/experience" id="JobExpMenu" className={(CompStyles.MenuIcon)}>
                         <Image src="/Icons/JobExperience.png" fill alt=""/>
                     </Link>
                     <label className={(CompStyles.LabelMenu)} htmlFor="JobExpMenu">Jobs</label>
