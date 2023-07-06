@@ -1,3 +1,36 @@
-#SkillSet input[type="checkbox"]:checked + label{
-    border: 1px solid white;
+#SkillSet{
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.SkillsTitle{
+    text-align: center;
+}
+.Skills{
+    display: block;
+    float: left;
+    margin: 5px;
+    padding: 2px;
+    border: 1px solid rgba(240,240,240,0.35);
+    border-radius: 7px;
+    width: clamp(200px, calc(50% - 14px), calc(100% - 14px));
+    max-height: clamp(350px, 70vh, max-content);
+    flex-grow: 100%;
+}
+.SkillGroup{
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    width: clamp(140px, calc(50% - 10px), calc(100% - 10px));
+    height: max-content;
+    border-radius: 7px;
+    background-color: rgba(240,240,240,0.2);
+    border: 1px solid rgba(240,240,240,0.3);
+}
+.SkillGroup div{
+    border-radius: 3px;
+    padding: 0 3px;
+    border: 1px solid rgba(240,240,240,0.7);
+    @apply bg-gray-900;
 }
