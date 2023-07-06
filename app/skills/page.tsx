@@ -3,27 +3,6 @@ import LocStyles from "./skills.module.css"
 import NavMenuComp from "@/complements/components/NavMenu/NavMenuComp"
 import { useState } from "react"
 export default function Skills(){
-    const [SkillSet, setSkillSet] = useState({
-        DataManagement: 70,
-        ProblemSolving: 70,
-        ResultsOriented: 70,
-        AttentionDetail: 70,
-        SalesAnalytics: 70,
-        Organization: 70,
-        DecisionMaking: 70,
-        ProductDevelopment: 70,
-        QualityControl: 70,
-        Teamwork: 70,
-        TeamLead: 70,
-        Supervising: 70,
-        SalesManagement: 70,
-        B2B: 70,
-        B2C: 70,
-        SelfTaught: 70,
-        SelfMotivated: 70,
-        Multitasking: 70,
-        TimeManagement: 70,
-    })
     const [DispSkill, setDispSkill] = useState({
         ProjectManagement: true,
         BusinessManagement: true,
